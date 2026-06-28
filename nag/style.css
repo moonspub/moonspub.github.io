@@ -30,7 +30,7 @@ body {
 
 p {
 	font-family: tf2-secondary;
-	font-size: clamp(7px, 2.1vmin, 2.1vmin);
+	font-size: clamp(12px, 2.1vmin, 2.1vmin);
 	margin: 1.5vmin;
 	margin-left: 15%;
 	margin-right: 15%;
@@ -38,7 +38,7 @@ p {
 
 h1 {
 	font-family: tf2-build;
-	font-size: 4vmin;
+	font-size: clamp(10px, 4vmin, 4vmin);
 	text-align: center;
 }
 
