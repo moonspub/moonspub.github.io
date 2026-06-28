@@ -7,8 +7,8 @@ html {
 
 body {
 	color: white;
-	max-width: 1400px;
 	height: 100%;
+	width: 130vmin;
 	vertical-align: middle;
 	display: table-cell;
 }
@@ -31,18 +31,20 @@ body {
 p {
 	font-family: tf2-secondary;
 	font-size: clamp(7px, 2.1vmin, 2.1vmin);
-
+	margin: 1.5vmin;
 	margin-left: 15%;
 	margin-right: 15%;
 }
 
 h1 {
 	font-family: tf2-build;
+	font-size: 4vmin;
 	text-align: center;
 }
 
 h2 {
 	font-family: tf2-build;
+	font-size: 2vmin;
 	text-align: center;
 }
 
@@ -57,6 +59,8 @@ h2 {
 .hero-image {
 	display: block;
 	margin: auto;
-	max-width: 60vw;
-	max-height: 40vh;
+	margin-top: 2vmin;
+	margin-bottom: 2vmin;
+	max-width: 60vmin;
+	max-height: 40vmin;
 }
