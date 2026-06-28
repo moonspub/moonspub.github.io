@@ -1,0 +1,62 @@
+html {
+	background: linear-gradient(black, #001b7d);
+	height: 100%;
+	display: table;
+	margin: auto;
+}
+
+body {
+	color: white;
+	max-width: 1400px;
+	height: 100%;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+@font-face {
+	font-family: tf2;
+	src: url(../assets/tfonts/TF2.ttf);
+}
+
+@font-face {
+	font-family: tf2-build;
+	src: url(../assets/tfonts/TF2Build.ttf);
+}
+
+@font-face {
+	font-family: tf2-secondary;
+	src: url(../assets/tfonts/TF2secondary.ttf);
+}
+
+p {
+	font-family: tf2-secondary;
+	font-size: clamp(7px, 2.1vmin, 2.1vmin);
+
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+h1 {
+	font-family: tf2-build;
+	text-align: center;
+}
+
+h2 {
+	font-family: tf2-build;
+	text-align: center;
+}
+
+.end-text {
+	font-weight: bold;
+	text-align: center;
+	font-size: 3vmin;
+	font-family: tf2-secondary;
+	text-align: center;
+}
+
+.hero-image {
+	display: block;
+	margin: auto;
+	max-width: 60vw;
+	max-height: 40vh;
+}
