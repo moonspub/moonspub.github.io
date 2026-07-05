@@ -36,6 +36,10 @@ p {
 	margin-right: 15%;
 }
 
+a {
+	color: aliceblue;
+}
+
 h1 {
 	font-family: tf2-build;
 	font-size: clamp(10px, 4vmin, 4vmin);
