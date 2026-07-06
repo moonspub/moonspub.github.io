@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="9.999999mm"
+   viewBox="0 0 200 9.999999"
+   version="1.1"
+   id="svg1"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient18">
+      <stop
+         style="stop-color:#303050;stop-opacity:1;"
+         offset="0.24823159"
+         id="stop13" />
+      <stop
+         style="stop-color:#6060a0;stop-opacity:1;"
+         offset="1"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient16">
+      <stop
+         style="stop-color:#37002b;stop-opacity:1;"
+         offset="0"
+         id="stop14" />
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.49723688"
+         id="stop15" />
+      <stop
+         style="stop-color:#37002b;stop-opacity:1;"
+         offset="1"
+         id="stop16" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0.54934907"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       spreadMethod="reflect"
+       gradientTransform="scale(0.99949377,1.0005065)"
+       x1="0.72770059"
+       y1="0.29736975"
+       x2="200.75955"
+       y2="0.29736975"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient16"
+       id="linearGradient4"
+       x1="102.3375"
+       y1="5.9796524"
+       x2="102.3375"
+       y2="10.858328"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       xlink:href="#linearGradient18"
+       id="linearGradient14"
+       x1="100.57127"
+       y1="0.30659294"
+       x2="100.57127"
+       y2="200.42691"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0003479,0,0,0.99933398,-0.72765232,-0.29725513)" />
+  </defs>
+  <g
+     id="layer2"
+     style="fill:url(#linearGradient4);fill-opacity:1;stroke:url(#linearGradient2)"
+     transform="matrix(1.0013245,0,0,0.05006622,-0.13244563,-0.00662228)">
+    <rect
+       style="fill:url(#linearGradient14);fill-opacity:1;stroke:#37002b;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+       id="rect10"
+       width="199.73546"
+       height="199.73546"
+       x="0.13227044"
+       y="0.13227044" />
+  </g>
+</svg>
