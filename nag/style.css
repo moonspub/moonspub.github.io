@@ -15,17 +15,17 @@ body {
 
 @font-face {
 	font-family: tf2;
-	src: url(../assets/tfonts/TF2.ttf);
+	src: url(../assets/fonts/TF2.ttf);
 }
 
 @font-face {
 	font-family: tf2-build;
-	src: url(../assets/tfonts/TF2Build.ttf);
+	src: url(../assets/fonts/TF2Build.ttf);
 }
 
 @font-face {
 	font-family: tf2-secondary;
-	src: url(../assets/tfonts/TF2secondary.ttf);
+	src: url(../assets/fonts/TF2secondary.ttf);
 }
 
 p {
