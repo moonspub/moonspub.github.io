@@ -1,0 +1,191 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Moon's Pub - Admin Commands</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>Admin commands</h1>
+	<h2>Player actions</h2>
+	<ul>
+		<li>
+			<code>sm_kick &lt;user&gt; &lt;reason&gt;</code> - Kick a player.
+		</li>
+		<li>
+			<code>sm_ban &lt;user&gt; &lt;time&gt; &lt;reason&gt;</code> - Ban a
+			player (time in seconds, 0 = indefinite).
+		</li>
+		<li><code>sm_unban &lt;steamid or ip&gt;</code> - Remove a ban.</li>
+		<li>
+			<code>sm_gag &lt;user&gt;</code> - Temporarily prevent text chat.
+		</li>
+		<li>
+			<code>sm_mute &lt;user&gt;</code> - Temporarily prevent voice chat.
+		</li>
+		<li>
+			<code>sm_silence &lt;user&gt;</code> - Temporarily prevent both text
+			and voice chat.
+		</li>
+		<li>
+			<code>sm_unsilence &lt;user&gt;</code> - Remove any silence, gag, or
+			mute.
+		</li>
+		<li>
+			<code>sm_rename &lt;user&gt;</code> - Change a player's username.
+		</li>
+		<li><code>sm_slay &lt;player&gt;</code> - Kill the player.</li>
+		<li>
+			<code>sm_zensitive_never &lt;steam id&gt;</code> - Prevent a user
+			from consenting to sensitive messages and revoke existing consent.
+		</li>
+		<li>
+			<code>sm_zensitive_reset &lt;steam id&gt;</code> - Reset sensitive
+			chat settings and remove the restriction applied by
+			<code>sm_zensitive_never</code>.
+		</li>
+		<li>
+			<code>sm_nag &lt;user&gt; &lt;nagpage&gt</code> - Shows a premade
+			message to the player via their HTML MOTD. Has a brief text
+			fallback. Current list of valid nags:
+			<a href=../nag/dj/index.html>dj</a>,
+			<a href=../nag/micspam/index.html>micspam</a>,
+			<a href=../nag/nsfw/index.html>nsfw</a>,
+			<a href=../nag/toxicity/index.html>toxicity</a>,
+			<a href=../nag/test/index.html>test</a>
+		</li>
+	</ul>
+
+	<h2>Sprays</h2>
+	<ul>
+		<li><code>sm_spraytrace</code> - Trace the spray you're looking at.</li>
+		<li>
+			<code>sm_removespray</code> - Remove the spray you're looking at and
+			display the moderation menu.
+		</li>
+		<li>
+			<code>sm_qremovespray</code> - Remove the spray you're looking at
+			without displaying a menu.
+		</li>
+		<li>
+			<code>sm_adminspray &lt;user&gt;</code> - Force another user's spray
+			where you're aiming.
+		</li>
+		<li><code>sm_sb &lt;user&gt;</code> - Spray ban a player.</li>
+	</ul>
+
+	<h2>Utility</h2>
+	<ul>
+		<li>
+			<code>sm_csay &lt;message&gt;</code> - Display a message at the
+			top-centre of the screen.
+		</li>
+		<li>
+			<code>sm_uid &lt;user&gt;</code> - Get one or more players' Steam
+			IDs in standard format.
+		</li>
+		<li>
+			<code>sm_uid64 &lt;target&gt;</code> - Get a player's 64-bit
+			(community) Steam ID.
+		</li>
+		<li>
+			<code>sm_steamhistory/sm_history &lt;user&gt;</code> - Get the steamhistory.net
+			URL for one or more players.
+		</li>
+		<li>
+			<code>sm_setnextmap &lt;map&gt;</code> - Change the next map in the
+			current rotation.
+		</li>
+		<li><code>sm_settings</code> - Change chat tag settings.</li>
+		<li>
+			<code>sm_opensteamhistory</code> /
+			<code>sm_openhistory &lt;target&gt;</code> - Open the player's
+			steamhistory.net page in an in-game MOTD panel.
+		</li>
+	</ul>
+
+	<h2>DJ stick</h2>
+	<ul>
+		<li>
+			<code>sm_djstick_force</code> /
+			<code>sm_forcedj &lt;target&gt;</code> - Force a player to become DJ
+			regardless of whitelist status.
+		</li>
+		<li>
+			<code>sm_djstick_revoke</code> /
+			<code>sm_revokedj &lt;target&gt;</code> - Force the current DJ to
+			abandon DJ status.
+		</li>
+	</ul>
+
+	<h2>Fun</h2>
+	<ul>
+		<li>
+			<code>sm_vote &lt;question&gt; &lt;answer1&gt; &lt;answer2&gt;...</code> -
+			Create a vote with the supplied question and answers.
+		</li>
+		<li>
+			<code>sm_smash &lt;user&gt;</code> - Smash player with a hammer.
+		</li>
+		<li><code>sm_smite &lt;user&gt;</code> - Smite the player.</li>
+	</ul>
+
+	<h2>Class Consciousness</h2>
+	<ul>
+		<li><code>sm_cc_roll</code> - Manually re-roll the class matchup.</li>
+		<li>
+			<code
+				>sm_cc_change &lt;red/blue/green/yellow/all&gt;
+				&lt;class&gt;</code
+			>
+			- Change the class matchup for one or all teams.
+		</li>
+		<li>
+			<code>sm_cc_enable &lt;0/1&gt;</code> - Toggle class enforcement.
+		</li>
+	</ul>
+
+	<h2>Senior Admins Only</h2>
+	<ul>
+		<li>
+			<code>sm_addban 0 &lt;steamid&gt; &lt;reason&gt;</code> - Add a
+			permanent ban to the SourceBans database.
+		</li>
+		<li>
+			<code>sm_trigger_serverexplosion</code> - Explode the server (Senior
+			Admins only).
+		</li>
+		<li><code>sm_rcon &lt;cmd&gt;</code> - Execute an RCON command.</li>
+		<li>
+			<code>sm_condify &lt;target&gt; &lt;condition number&gt;</code> -
+			Apply a condition to a player.
+		</li>
+		<li>
+			<code>sm_decondify &lt;target&gt; &lt;condition number&gt;</code> -
+			Remove a condition from a player.
+		</li>
+		<li>
+			<code>sm_classify &lt;target&gt; &lt;class&gt;</code> - Change a
+			player's class without changing weapons.
+		</li>
+		<li>
+			<code>sm_reclassify &lt;target&gt; &lt;class&gt;</code> - Change a
+			player's class and refresh their weapons.
+		</li>
+		<li>
+			<code>sm_regenify &lt;target&gt;</code> - Regenerate a player as if
+			they touched a resupply cabinet.
+		</li>
+		<li>
+			<code>sm_respawnify &lt;target&gt;</code> - Immediately respawn a
+			player.
+		</li>
+		<li>
+			<code>sm_teamify &lt;target&gt; &lt;team&gt;</code> - Move a player
+			to another team, killing them in the process.
+		</li>
+		<li>
+			<code>sm_moneyify &lt;target&gt; &lt;amount&gt;</code> - Set a
+			player's MvM balance to the specified amount.
+		</li>
+	</ul>
+</body>
