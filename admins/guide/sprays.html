@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Moon's Pub - Dealing with sprays</title>
+	<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+	<h1>Dealing with sprays</h1>
+	<p>
+		We have some commands and tools for dealing with sprays. This post goes
+		over how to use them.
+	</p>
+	<h2>spraybanning</h2>
+	<p>
+		To sprayban, you can use the <code>sm_sprayban</code> command.
+		<code>sm_sprayunban</code> does the inverse.
+	</p>
+	<h2>doing a spray check</h2>
+	<p>
+		If you want to check the sprays of each player you can do so using the
+		<code>sm_adminspray</code> command. It allows you to spray other
+		players' sprays where you're looking to view them. You should do so in a
+		spot outside of the map where people are unlikely to look. This command
+		works in spectator mode so you can use that to noclip to a spot out of
+		view.
+	</p>
+	<h2>identifying and removing sprays</h2>
+	<p>
+		You can identify a spray using the <code>sm_spraytrace</code> command.
+		This will tell you who sprayed it. To remove the spray, use the
+		<code>sm_qremovespray</code> command. With the Q at the beginning.
+	</p>
+	<p>
+		It's worth mentioning that while some players may have NSFW sprays they
+		may not intend to spray them. Unless the spray itself communicates a
+		problem with the player (i.e. you see some Nazi shit) then you shouldn't
+		take action if it's unlikely they sprayed it.
+	</p>
+	<h3>if the plugin doesn't work</h3>
+	<p>
+		If for some reason the plugin doesn't work or you can't see the spray,
+		you have the backup option of using the server logs.
+	</p>
+	<p>
+		In the logs, it will log on the first occurrence of a user using a
+		certain spray. The message looks like this:
+	</p>
+	<p>
+		<code
+			>Spray: <strong>Skinny Soviet</strong> (STEAM_0:1:41787730) -&gt;
+			&lt;Spray: 269008e4&gt;</code
+		>
+	</p>
+	<p>
+		The set of characters in the spray part is the &quot;hex&quot; of the
+		spray. If you were on the server when the file was sprayed there should
+		be a file with the hex suffixed with <code>.dat</code> (so in the above
+		example <code>269008e4.dat</code>) in your
+		<code>tf2classified/download/user_custom</code> folder. The file will
+		exist in a folder that's the first two characters of the hex. So in this
+		case <code>user_custom/26/269008e4.dat</code>. Despite the extension
+		being <code>.dat</code> it's indeed a VTF file.
+	</p>
+	<p>
+		If it isn't there, you can ask Moonrder to look in the server's files
+		for it.
+	</p>
+	<p>
+		You can use a program like
+		<a href="https://maretf.me/">MareTF for Windows/Linux</a>,
+		<a href="https://github.com/Yan01h/VTFViewer">VTF Viewer for Windows</a
+		>, the <a href="https://sr.ht/~b5327157/no_vtf/">no_vtf CLI</a>, or one
+		of the plethora of tools that can view the VTF file.
+	</p>
+</body>
