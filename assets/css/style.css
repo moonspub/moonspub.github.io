@@ -1,14 +1,14 @@
 /* Website template by freewebsitetemplates.com */
 /* Website by Moonrider, some additonal style modifications made by libadwaita */
-@font-face{
-font-family: DejaVu Sans;
-src: url(../fonts/DejaVuSans.woff);
+@font-face {
+	font-family: DejaVu Sans;
+	src: url(../fonts/DejaVuSans.woff);
 }
 
-@font-face{
-font-family: DejaVu Sans;
-src: url(../fonts/DejaVuSans-Bold.woff);
-font-weight: bold;
+@font-face {
+	font-family: DejaVu Sans;
+	src: url(../fonts/DejaVuSans-Bold.woff);
+	font-weight: bold;
 }
 
 :root {
@@ -17,7 +17,10 @@ font-weight: bold;
 
 body {
 	background: #ffb744 url(../images/bg-body.jpg) repeat left bottom;
-	font-family: "DejaVu Sans", DejaVu Sans, serif;
+	font-family:
+		"DejaVu Sans",
+		DejaVu Sans,
+		serif;
 	margin: 0;
 }
 #background {
@@ -57,34 +60,40 @@ img {
 /*linkcolours*/
 
 a:link {
-color: rgb(0,64,240);
+	color: rgb(0, 64, 240);
 }
 
 a:hover {
-color: rgb(0,96,255);
+	color: rgb(0, 96, 255);
 }
 
 a:active {
-color: rgb(0,96,96);
+	color: rgb(0, 96, 96);
 }
 
 a:visited {
-color: rgb(104,104,144);
+	color: rgb(104, 104, 144);
 }
 /*------------------------------ Sprites ------------------------------*/
-#navigation li, #navigation li a:hover, #navigation li.selected a {
+#navigation li,
+#navigation li a:hover,
+#navigation li.selected a {
 	background-image: url(../images/bg-menu.png);
 	background-repeat: repeat-x;
 }
-#contents div.box, #contents div.box > div, #contents div.body {
-	background-color: rgb(255,255,255);
+#contents div.box,
+#contents div.box > div,
+#contents div.body {
+	background-color: rgb(255, 255, 255);
 	background-repeat: no-repeat;
-	box-shadow: 0px 0px 6px 3px rgba(16, 16, 24, 0.50);
+	box-shadow: 0px 0px 6px 3px rgba(16, 16, 24, 0.5);
 }
-#main div.box, #main div.box > div, #main div.box > div > div {
-	background-color: rgb(32,32,192);
+#main div.box,
+#main div.box > div,
+#main div.box > div > div {
+	background-color: rgb(32, 32, 192);
 	background-repeat: no-repeat;
-	box-shadow: 0px 0px 6px 3px rgba(16, 16, 24, 0.50);
+	box-shadow: 0px 0px 6px 3px rgba(16, 16, 24, 0.5);
 }
 /*------------------------------ HEADER ------------------------------*/
 
@@ -133,21 +142,22 @@ color: rgb(104,104,144);
 		background: url(../images/bg-navigation-mobile.png) no-repeat;
 		height: 300px;
 	}
-	#navigation, #navigation ul {
+	#navigation,
+	#navigation ul {
 		width: 122px;
 	}
-	#logo, .logo_image {
+	#logo,
+	.logo_image {
 		max-width: 90%;
 	}
 	#sites li img {
-	float: none !important;
-	max-width: 90%;
+		float: none !important;
+		max-width: 90%;
 	}
 	.blog_image {
-	max-width: 90%;
-}
+		max-width: 90%;
 	}
-
+}
 
 #navigation li:first-child {
 	background: none;
@@ -157,7 +167,10 @@ color: rgb(104,104,144);
 #navigation li a {
 	color: #fff;
 	display: block;
-	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	font:
+		bold 14px/48px Arial,
+		Helvetica,
+		sans-serif;
 	height: 49px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -181,14 +194,21 @@ color: rgb(104,104,144);
 }
 #contents h1 {
 	color: #316e66;
-	font: 26px/30px "DejaVu Sans", DejaVu Sans, serif;
+	font:
+		26px/30px "DejaVu Sans",
+		DejaVu Sans,
+		serif;
 	margin: 18px 0 20px;
 	padding-left: 2px;
 	text-transform: uppercase;
 }
-#contents div.body h1, #contents h2 {
+#contents div.body h1,
+#contents h2 {
 	color: #316e66;
-	font: 30px/30px "DejaVu Sans", DejaVu Sans, serif;
+	font:
+		30px/30px "DejaVu Sans",
+		DejaVu Sans,
+		serif;
 	margin: 0 0 18px;
 	text-transform: uppercase;
 }
@@ -239,7 +259,7 @@ color: rgb(104,104,144);
 	padding-left: 20px;
 }
 hr {
-	border:0;
+	border: 0;
 	border-top: 1px solid #bbbbbb;
 	margin-bottom: 30px;
 }
@@ -274,7 +294,10 @@ hr {
 	text-transform: uppercase;
 }
 #main div.box h4 {
-	font: 22px/24px "DejaVu Sans", DejaVu Sans, serif;
+	font:
+		22px/24px "DejaVu Sans",
+		DejaVu Sans,
+		serif;
 	font-weight: normal;
 	margin: 6px 0 0;
 }
@@ -301,12 +324,19 @@ hr {
 	padding: 0 0 3px;
 }
 
+.body ul {
+	margin: 0px;
+}
+
 @media (prefers-color-scheme: dark) {
-	#main div.box > div > div, #main div.box > div > div.body {
+	#main div.box > div > div,
+	#main div.box > div > div.body {
 		background-color: black !important;
 		color: white !important;
 	}
-	#contents div.box, #contents div.box > div, #contents div.body {
+	#contents div.box,
+	#contents div.box > div,
+	#contents div.body {
 		background-color: black !important;
 		color: white !important;
 	}
@@ -325,7 +355,7 @@ hr {
 	padding: 3px 0 0;
 }
 #sidebar div.section > a:hover {
-	filter:alpha(opacity=60);
+	filter: alpha(opacity=60);
 	opacity: 0.6;
 }
 
@@ -336,7 +366,7 @@ hr {
 
 @media screen and (max-width: 960px) {
 	#sidebar {
-	width: 300px;
+		width: 300px;
 	}
 }
 
@@ -355,11 +385,10 @@ hr {
 	}
 	#sidebar div.section:first-child {
 		padding: 300px 0 0;
-	
 	}
 
 	#sidebar div.section > a:hover {
-		filter:alpha(opacity=60);
+		filter: alpha(opacity=60);
 		opacity: 0.6;
 	}
 }
@@ -387,19 +416,25 @@ hr {
 	color: #2c9688;
 }
 /** Rooms, Foods Dive Sites **/
-#rooms, #foods, #sites {
+#rooms,
+#foods,
+#sites {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
-#rooms li, #foods li, #sites li {
+#rooms li,
+#foods li,
+#sites li {
 	display: inline-block;
 	width: 100%;
 	border-top: 1px solid #b7b7b7;
 	padding: 30px 0;
 	position: relative;
 }
-#rooms li:first-child, #foods li:first-child, #sites li:first-child {
+#rooms li:first-child,
+#foods li:first-child,
+#sites li:first-child {
 	border-top: 0;
 }
 #rooms li img {
@@ -411,7 +446,10 @@ hr {
 #rooms .rate {
 	color: #316e66;
 	display: inline-block;
-	font: 16px/35px "DejaVu Sans", DejaVu Sans, serif;
+	font:
+		16px/35px "DejaVu Sans",
+		DejaVu Sans,
+		serif;
 	height: 35px;
 	width: 138px;
 	border: 1px solid #5a4535;
@@ -438,7 +476,10 @@ hr {
 }
 #foods li > div.infos p span {
 	display: block;
-	font: 22px/22px "DejaVu Sans", DejaVu Sans, serif;
+	font:
+		22px/22px "DejaVu Sans",
+		DejaVu Sans,
+		serif;
 }
 #foods li > div.infos:hover span.cover {
 	background: url(../images/bg-foodInfos.png) repeat;
@@ -479,20 +520,20 @@ hr {
 
 @media screen and (min-width: 880px) {
 	#news {
-	width: 784px;
-	padding-right:
+		width: 784px;
+		padding-right:;
 	}
-	
+
 	#news > div {
-	width: 560px;
-	border-right: 1px solid #bbbbbb;
-	padding-right: 35px;
+		width: 560px;
+		border-right: 1px solid #bbbbbb;
+		padding-right: 35px;
 	}
 	#news div.sidebar {
-	float: right;
-	width: 160px;
-	border: 0;
-	padding: 0;
+		float: right;
+		width: 160px;
+		border: 0;
+		padding: 0;
 	}
 }
 
@@ -501,7 +542,10 @@ hr {
 }
 #news > div span {
 	display: block;
-	font: 15px/24px "DejaVu Sans", DejaVu Sans, serif;
+	font:
+		15px/24px "DejaVu Sans",
+		DejaVu Sans,
+		serif;
 	margin-bottom: 30px;
 }
 #news > div span.author {
