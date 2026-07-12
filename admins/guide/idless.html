@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Moon's Pub - IDless players</title>
+	<link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+	<h1>IDless players</h1>
+	<p>
+		There is a flaw in Source games that allows players to connect to
+		servers without being authenticated, which in turns means they have no
+		Steam ID. This can make it challenging to deal with these players. Our
+		server has some tools at your disposal to deal with these players.
+	</p>
+	<h1>identifying them</h1>
+	<p>IDless players:</p>
+	<ul>
+		<li>Cannot be targeted using normal commands like sm_ban/sm_kick</li>
+		<li>
+			Do not have a connection message in the server's logging channel
+		</li>
+		<li>
+			Will show <code>STEAM_ID_STOP_IGNORING_RETVALS</code> for Steam IDs
+			in other parts of the log
+		</li>
+		<li>Cannot view profile by right-clicking on the scoreboard</li>
+	</ul>
+	<h1>dealing with them</h1>
+	<p>
+		We're using a custom plugin that will automatically disconnect these
+		players after a certain duration after initial connection, and prevent
+		them from spraying or using text chat. If for some reason this measure
+		is bypassed (for example if they went IDless mid-game) you can use the
+		<code>sm_kickidless</code> command to kick all currently IDless players.
+	</p>
+	<p>
+		It's worth mentioning that some players may be temporarily IDless after
+		connecting or during Steam outages. Try to use the command sparingly as
+		these players may also end up kicked. Also try to use it some time after
+		a map change so all innocent players are authenticated.
+	</p>
+</body>
