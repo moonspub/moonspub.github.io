@@ -11,6 +11,21 @@
 	font-weight: bold;
 }
 
+@font-face {
+	font-family: tf2;
+	src: url(../fonts/TF2.ttf);
+}
+
+@font-face {
+	font-family: tf2-build;
+	src: url(../fonts/TF2Build.ttf);
+}
+
+@font-face {
+	font-family: tf2-secondary;
+	src: url(../fonts/TF2secondary.ttf);
+}
+
 :root {
 	scrollbar-color: #3399ff #000000 !important;
 }
@@ -724,4 +739,30 @@ hr {
 }
 #connect a.googleplus:hover {
 	background-position: 0 -197px;
+}
+
+.download-button {
+	border-radius: 2px;
+	outline-style: solid;
+	outline-color: ghostwhite;
+	background-image: linear-gradient(blue, darkblue);
+	width: fit-content;
+	margin: 10px;
+	padding: 10px;
+}
+
+.download-button  {
+	font-family: tf2-build;
+	color: white;
+	text-decoration: none;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	font-size: 2em;
+	text-box: trim-both cap alphabetic;
+	text-shadow: 0px 0px 4px black;
+}
+
+a:has(.download-button) {
+	text-decoration: none;
 }
