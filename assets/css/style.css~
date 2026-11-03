@@ -732,6 +732,11 @@ hr {
 	background-position: 0 -197px;
 }
 
+.youtube-video-embed {
+	width: 560px;
+	height: 315px;
+}
+
 @media screen and (max-width: 880px) {
 	#navigation {
 		background: url(../images/bg-navigation-mobile.png) no-repeat;
@@ -758,6 +763,11 @@ hr {
 	
 	.offsite-iframe {
 	width: 100%;
+	}
+	
+	.youtube-video-embed {
+	width: 288px;
+	height: 162px;
 	}
 }
 
@@ -814,7 +824,7 @@ button:active {
 }
 
 .download-button:hover {
-	background-image: linear-gradient(#4040ff, #22228b);
+	background-image: linear-gradient(#8080ff, #44448b);
 }
 
 a:has(.download-button) {

@@ -732,6 +732,12 @@ hr {
 	background-position: 0 -197px;
 }
 
+.youtube-video-embed {
+	width: 560px;
+	height: 315px;
+	border: 1px solid #2c9688;
+}
+
 @media screen and (max-width: 880px) {
 	#navigation {
 		background: url(../images/bg-navigation-mobile.png) no-repeat;
@@ -758,6 +764,11 @@ hr {
 	
 	.offsite-iframe {
 	width: 100%;
+	}
+	
+	.youtube-video-embed {
+	width: 288px;
+	height: 162px;
 	}
 }
 
