@@ -28,6 +28,7 @@
 
 :root {
 	scrollbar-color: #3399ff #000000 !important;
+	scrollbar-width: thin !important;
 }
 
 body {
@@ -152,27 +153,6 @@ a:visited {
 	padding-left: 1px;
 	text-align: center;
 }
-@media screen and (max-width: 880px) {
-	#navigation {
-		background: url(../images/bg-navigation-mobile.png) no-repeat;
-		height: 300px;
-	}
-	#navigation,
-	#navigation ul {
-		width: 122px;
-	}
-	#logo,
-	.logo_image {
-		max-width: 90%;
-	}
-	#sites li img {
-		float: none !important;
-		max-width: 90%;
-	}
-	.blog_image {
-		max-width: 90%;
-	}
-}
 
 #navigation li:first-child {
 	background: none;
@@ -254,8 +234,15 @@ a:visited {
 	background-position: -871px top;
 	background-repeat: repeat-y;
 	min-height: 980px;
+	width: 880px;
 	padding: 30px 40px 0;
 }
+.offsite-iframe {
+	width: 800px;
+	height: 600px;
+}
+
+
 /** Adbox **/
 #adbox {
 	background: url(../images/bg-adbox.png) no-repeat left top;
@@ -405,6 +392,10 @@ hr {
 	#sidebar div.section > a:hover {
 		filter: alpha(opacity=60);
 		opacity: 0.6;
+	}
+	.link-list > li {
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
 	}
 }
 /** testimonials **/
@@ -741,6 +732,65 @@ hr {
 	background-position: 0 -197px;
 }
 
+@media screen and (max-width: 880px) {
+	#navigation {
+		background: url(../images/bg-navigation-mobile.png) no-repeat;
+		height: 300px;
+	}
+	#navigation,
+	#navigation ul {
+		width: 122px;
+	}
+	#logo,
+	.logo_image {
+		max-width: 90%;
+	}
+	#sites li img {
+		float: none !important;
+		max-width: 90%;
+	}
+	.blog_image {
+		max-width: 90%;
+	}
+	#contents div.body{
+	width: 80%;
+	}	
+	
+	.offsite-iframe {
+	width: 100%;
+	}
+}
+
+button {
+	background-image: linear-gradient(180deg, rgb(143, 143, 213) 0%, rgb(10, 10, 128) 50%, rgb(6, 6, 56) 50%, rgb(64, 64, 154) 100%);
+	color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 5px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-bottom: 3px;
+	user-select: none;
+	-webkit-user-select: none;
+	font-size: 1em;
+	border: 1px solid rgba(0, 0, 96, 1);
+	text-decoration: none;
+	border-bottom: none;
+	outline: none !important; 
+	font-family: DejaVu Sans, "DejaVu Sans";
+	-ms-user-select: none;
+	-moz-user-select: none;
+}
+
+button:hover {
+	background-image: linear-gradient(180deg, rgb(172, 172, 255) 0%, rgb(13, 13, 128) 50%, rgb(7, 7, 70) 50%, rgb(80, 80, 192) 100%);
+}
+
+button:active {
+	background-image: linear-gradient(180deg, rgb(208, 208, 255) 0%, rgb(12, 12, 160) 50%, rgb(10, 10, 128) 50%, rgb(128, 128, 208) 100%);
+}
+
 .download-button {
 	border-radius: 2px;
 	outline-style: solid;
@@ -761,6 +811,10 @@ hr {
 	font-size: 2em;
 	text-box: trim-both cap alphabetic;
 	text-shadow: 0px 0px 4px black;
+}
+
+.download-button:hover {
+	background-image: linear-gradient(#8080ff, #44448b);
 }
 
 a:has(.download-button) {
